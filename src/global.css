@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+@import url("https://p.typekit.net/p.css?s=1&k=nmc6gjz&ht=tk&f=55315.55316&a=303216391&app=typekit&e=css");
+
+@font-face {
+font-family:"inter-tight-variable";
+src:url("https://use.typekit.net/af/07eb11/0000000000000000774ebcd7/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/07eb11/0000000000000000774ebcd7/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/07eb11/0000000000000000774ebcd7/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:100 900;font-stretch:normal;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: medium;
+}
+.eco {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+}
+.eco :hover {
+    background: transparent;
+    opacity: 60%;
+    border: 0;
+}
+
