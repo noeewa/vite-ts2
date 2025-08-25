@@ -1,4 +1,4 @@
-import  Header from "../images/Header.svg";
+import  Header from "../images/HEADER.svg";
 
 export type Galleryprops = {
     menu: string[];

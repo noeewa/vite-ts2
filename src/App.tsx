@@ -4,6 +4,8 @@ import * as React from "react"
 import './App.css';
 import "./index.css"
 import "./global.css"
+import bgimage from "./images/BG.jpg";
+
 
 //SUPABASE
 
@@ -21,6 +23,7 @@ import { Timeline } from "./component/timeline";
 import { useRef } from "react";
 import { useLayoutEffect } from 'react';
 
+
 //TUGAS BESOK!! adalah membuat ref untuk menyimpan posisi scroll
 
 type AppProps = {
@@ -34,7 +37,6 @@ type AppProps = {
 
 
 function App({ portfolioSettings, posisi }: AppProps) {
-
 
   //DeadLine
   const targetRef = useRef<HTMLDivElement | null>(null);
@@ -100,7 +102,7 @@ function App({ portfolioSettings, posisi }: AppProps) {
             
             <div className="h-fit hover:scale-110 transition-transform duration-700 ease-out text-gradient-to-t from-black/60 via-transparent to-transparent">
               <img
-                src={portfolioSettings.displayBannerImage}
+                src={bgimage}
                 alt="Display Banner"
                 className="w-full h-80 object-cover "
                 onClick={scrollClick}
@@ -460,7 +462,7 @@ function App({ portfolioSettings, posisi }: AppProps) {
   };
   return (
     <div className="App">
-      {ShowPop ? <Popup className="overflow-y: auto; w-full" setShowPop={setShowPop} />  : <AppUtama  />}
+      {ShowPop ? <Popup className="overflow-y: auto; w-full" setShowPop={setShowPop} ShowPop={ShowPop}/>  : <AppUtama  />}
     </div>
   );
 }

@@ -1,5 +1,4 @@
-import React from "react";
-
+import patung from "../images/patung.jpg";
 
 type FotoPProps = {
     src?: string;
@@ -8,14 +7,13 @@ type FotoPProps = {
 }
 
 export default function FotoP({
-    src = "../src/images/patung.jpg",
     alt = "Profile Photo",
     className = ""
 }: FotoPProps) {
     return(
         <div className={`relative overflow-hidden rounded-full ${className}`}>
             <img
-                src={src}
+                src={patung}
                 alt={alt}
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 onError={(e) => {

@@ -53,9 +53,9 @@ export const portfolioSettings: PortfolioSettings = {
   description: "Sedang Menjalani Spesialisasi",
 
   // Images
-  profileImage: "../src/images/patung.jpg",
-  bannerProfileImage: "../src/images/BG.jpg", // This is no longer used in the current layout
-  displayBannerImage: "../src/images/BG.jpg", // Updated path to match the new structure
+  profileImage: "~/vite-ts2/src/images/patung.jpg",
+  bannerProfileImage: "~/vite-ts2/src/images/BG.jpg", // This is no longer used in the current layout
+  displayBannerImage: "~/vite-ts2/src/images/BG.jpg", // Updated path to match the new structure
 
   // Contact Information
   location: "Indonesia, East Java",

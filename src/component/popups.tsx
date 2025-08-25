@@ -6,8 +6,10 @@ import { gallerySet } from "../config/galleryset";
 import Slide from "./sliderban";
 import Tigadua from "./tigadua";
 import { portfolioSettings } from "../config/portfolio-setting";
+import { useLayoutEffect } from "react";
 
 export type PopupProps = {
+    ShowPop: boolean;
     setShowPop: (value: boolean) => void;
     variant?: "default" | "outline";
     children?: React.ReactNode;
@@ -22,6 +24,10 @@ const Popup = ({setShowPop}:PopupProps) => {
             window.scrollTo({ top: 0, behavior: "auto" });
           }
         )
+    useLayoutEffect(() => {
+        window.scrollTo({ top: 0, behavior: "auto" });
+          
+      });
     return(
         <> 
             <div className="flex-col h-fit w-full bg-black text-white pb-1 justify-items-center">
